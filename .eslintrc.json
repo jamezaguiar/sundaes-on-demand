@@ -2,12 +2,13 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "jest": true
+    "node": true,
+    "jest/globals": true
   },
   "extends": [
-    "airbnb",
-    "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb",
     "plugin:prettier/recommended",
     "plugin:testing-library/react"
   ],
@@ -18,7 +19,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "testing-library", "jest-dom", "prettier"],
+  "plugins": ["react", "testing-library", "jest", "jest-dom", "prettier"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
