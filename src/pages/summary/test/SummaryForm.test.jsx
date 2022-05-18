@@ -67,3 +67,5 @@ test('popover responds to hover', async () => {
     screen.queryByText(/no ice cream will actually be delivered/i)
   );
 });
+
+// TODO: solve wrap in act warning
