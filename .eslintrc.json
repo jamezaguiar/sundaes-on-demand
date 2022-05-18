@@ -21,8 +21,29 @@
   },
   "plugins": ["react", "testing-library", "jest", "jest-dom", "prettier"],
   "rules": {
+    "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "jest-dom/prefer-checked": "error",
+    "jest-dom/prefer-enabled-disabled": "error",
+    "jest-dom/prefer-required": "error",
+    "jest-dom/prefer-to-have-attribute": "error",
+    "react/prop-types": ["off"],
+    "max-lines-per-function": ["warn", 50],
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".tsx", ".jsx"] }
+    ],
+    "import/extensions": ["error", "never"],
+    "import/no-unresolved": 2,
+    "import/order": "off",
+    "no-shadow": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "prettier/prettier": "error",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-curly-newline": "off",
     "import/prefer-default-export": "off"
   }
 }
