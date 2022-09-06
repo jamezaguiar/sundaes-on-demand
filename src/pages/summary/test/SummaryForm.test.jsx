@@ -1,5 +1,4 @@
 import {
-  act,
   render,
   screen,
   waitForElementToBeRemoved
@@ -27,14 +26,12 @@ test('checking/unchecking checkbox enables/disables button', async () => {
   });
   const button = screen.getByRole('button', { name: /confirm order/i });
 
-  await act(async () => {
-    await user.click(checkbox);
-  });
+  await user.click(checkbox);
+
   expect(button).toBeEnabled();
 
-  await act(async () => {
-    await user.click(checkbox);
-  });
+  await user.click(checkbox);
+
   expect(button).toBeDisabled();
 });
 
